@@ -1,0 +1,140 @@
+@font-face {
+    font-family: betterfly;
+    src: url(../fonts/betterfly.otf);
+}
+
+@font-face {
+    font-family: atkinson;
+    src: url(../fonts/AtkinsonHyperlegible.ttf);
+}
+
+body {
+    font-family: atkinson;
+    background-image: url(../images/background.jpg);
+    background-size: 100%;
+    margin: 2.5em;
+}
+
+h1 {
+    font-family: betterfly;
+    color: #333333;
+    font-size: 3em;
+}
+
+h2 {
+    text-align: center;
+    color: #333333;
+}
+
+p {
+    padding: 1em;
+    margin: 0em;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #333333;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    position: relative;
+}
+
+header h1 {
+    margin-left: 62px;
+}
+
+nav ul {
+    display: flex;
+    gap: 1em;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    display: inline-block;
+    padding: 1em;
+    background-color: #eddecf;
+    color: black;
+    border: 0.2em solid #ae9f92;
+    border-radius: 0.5em;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: black;
+    background-color: white;
+    transform: translateY(-5px);
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main h1 {
+    width: 100%;
+    text-align: center;
+}
+
+main section {
+    background-color: #F5F5F5;
+    width: 30%;
+    margin-top: 1em;
+    border: 0.2em solid #ae9f92;
+    border-radius: 1em;
+}
+
+main section img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5em;
+}
+
+main.info-pagina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 2em 0;
+}
+
+main.info-pagina section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+    background-color: #F5F5F5;
+    padding: 2em;
+    border: 0.2em solid #ae9f92;
+    border-radius: 1em;
+    width: 100%;
+    max-width: 800px;
+}
+
+main.info-pagina section.omgekeerd {
+    flex-direction: row-reverse;
+}
+
+main.info-pagina img {
+    width: 12em;
+    height: auto;
+    border-radius: 0.5em;
+    flex-shrink: 0;
+}
+
+main.info-pagina div {
+    flex: 1;
+}
+
+main.bronnen-pagina section {
+    display: block;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 2em;
+}
